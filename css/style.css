@@ -1,0 +1,135 @@
+*{
+    margin:0; 
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+header ,#footer , .fc >*{
+   
+    padding:10px;
+    margin: 5px;
+    border-radius: 10px;
+    
+}
+header , #footer {
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url("../images/Chicago.jpg");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 250px;
+    
+}
+
+.fc{
+    display: flex;
+    flex-flow: row wrap;
+
+    min-height: calc(100vh - 500px);
+    width:80%;
+    margin:auto;
+
+}
+.fc >*{
+    flex: 1;
+    text-align: center;
+}
+section img{
+    width:150px;
+    border: 1px solid  gray;
+    border-radius: 50%;
+    background-color: white;
+    padding:3px;
+}h3{
+    font-size: 25px;
+}
+section p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+}
+/* style the video */
+#myvideoSection{
+  min-width: 100%;
+  
+
+}
+
+#videoPlayer{
+  min-width: 60%;
+  max-width:90%;
+  max-height: 300px;
+  margin: auto;
+}
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 700px) {
+    .column {
+      flex: 31%;
+      max-width: 31%;
+    }
+  }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 600px) {
+    .column {
+      flex: 45%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 500px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* Add style to footer */
+  div {
+    font-family: Arial;
+  }
+  
+  #footer {
+    background-color: #0E0B16;
+    color: #FFFFFF;
+    min-height: 250px;
+    overflow: hidden;
+  }
+  #footer section {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  #footer footer {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FFFFFF;
+    border-top: 1px #A239CA solid;
+  }
+  #footer ul {
+    float: left;
+    width: 30%;
+    list-style: none;
+    padding: 0px;
+  }
+  #footer li {
+    padding: 5px;
+  }
+  #footer .topLevel {
+    font-size: 1.2em;
+    font-variant: small-caps;
+  }
+  
